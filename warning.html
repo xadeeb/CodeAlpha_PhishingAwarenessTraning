@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FIR Warning - Phishing Attempt</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="warning-page">
+  <h1>⚠️ You just fell for a fake login!</h1>
+  <p>
+    This was a phishing awareness simulation. Never enter credentials on suspicious pages. Always check the URL and website authenticity before logging in.
+  </p>
+  <button id="learnBtn">Learn About Phishing</button>
+
+  <script>
+    document.getElementById('learnBtn').addEventListener('click', function() {
+      window.location.href = 'phishing-awareness.html';
+    });
+  </script>
+</body>
+</html>

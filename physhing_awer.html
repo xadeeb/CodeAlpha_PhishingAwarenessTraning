@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phishing Awareness Tool</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+      background: #d8d77f;
+    }
+    .quiz-box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      max-width: 500px;
+      margin: auto;
+    }
+    .question {
+      font-weight: bold;
+    }
+    button {
+      padding: 10px 15px;
+      margin: 10px 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-box" style="margin-top: 20vh;">
+    <div class="question" id="question">Loading...</div>
+    <button onclick="checkAnswer(true)">✅ Safe</button>
+    <button onclick="checkAnswer(false)">⚠️ Phishing</button>
+    <div id="result" style="margin-top: 15px;"></div>
+    <div id="score" style="margin-top: 10px;"></div>
+  </div>
+
+  <!--back Button-->
+
+  <div style="text-align: center;">
+    <a href="index.html">
+        <button id="learnBtn" >Go Back to main page</button>
+    </a>
+
+  <script>
+    const questions = [
+      {
+        text: "Email from support@paypal.com asking to confirm your password via a link.",
+        answer: false
+      },
+      {
+        text: "Email from hr@yourcompany.com asking for updated documents.",
+        answer: true
+      },
+      {
+        text: "Link: http://paypallogin-security.com",
+        answer: false
+      },
+      {
+        text: "Email from it@university.edu about scheduled maintenance.",
+        answer: true
+      }
+    ];
+
+    let index = 0;
+    let score = 0;
+
+    function loadQuestion() {
+      if (index < questions.length) {
+        document.getElementById("question").innerText = questions[index].text;
+      } else {
+        document.getElementById("question").innerText = "✅ Quiz Complete!";
+        document.getElementById("score").innerText = `Final Score: ${score}/${questions.length}`;
+        document.querySelectorAll("button").forEach(btn => btn.disabled = true);
+      }
+    }
+
+    function checkAnswer(choice) {
+      const isCorrect = questions[index].answer === choice;
+      document.getElementById("result").innerText = isCorrect
+        ? "✅ Correct!"
+        : "❌ Incorrect!";
+      if (isCorrect) score++;
+      index++;
+      setTimeout(() => {
+        document.getElementById("result").innerText = "";
+        loadQuestion();
+      }, 1000);
+    }
+
+    loadQuestion();
+  </script>
+</body>
+</html>

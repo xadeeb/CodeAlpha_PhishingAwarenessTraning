@@ -1,0 +1,207 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ---------------- LOGIN PAGE (Snapchat Style) ---------------- */
+
+body.login-page {
+  background: #fffc00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  padding: 40px 30px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.logo img {
+  width: 80px;
+}
+
+h2 {
+  margin: 20px 0;
+  font-size: 24px;
+  color: #000;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 14px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #fffc00;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 252, 0, 0.7);
+}
+
+button {
+  background: #fffc00;
+  border: none;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 252, 0, 0.5);
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e6e600;
+}
+
+.footer {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Animation for Login Card */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ---------------- WARNING PAGE ---------------- */
+
+body.warning-page {
+  background-color: #b00020;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+body.warning-page h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+body.warning-page p {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  max-width: 450px;
+}
+
+body.warning-page button {
+  padding: 14px 25px;
+  font-size: 1.2rem;
+  background-color: #fff;
+  color: #b00020;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+body.warning-page button:hover {
+  background: #f2f2f2;
+}
+
+/* ---------------- QUIZ PAGE ---------------- */
+
+body.quiz-page {
+  background: #f0f8ff;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #0077cc;
+  margin-bottom: 20px;
+}
+
+section {
+  max-width: 700px;
+  margin: auto;
+}
+
+.quiz {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.options li {
+  margin: 10px 0;
+}
+
+.options input {
+  margin-right: 8px;
+}
+
+button#submitBtn {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0077cc;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button#submitBtn:hover {
+  background-color: #005fa3;
+}
+
+.result {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
