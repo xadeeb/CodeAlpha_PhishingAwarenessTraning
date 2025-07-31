@@ -7,7 +7,7 @@ This project demonstrates a **phishing attack simulation** combined with an **aw
 
 ## ✅ Features
 - Snapchat-style Fake Login Page
-- Warning Page (FIR Alert)
+- Warning Page (Alert)
 - Phishing Awareness Page with Quiz
 - Dynamic Quiz with Scoring
 - Instant Game Over on Wrong Answer
@@ -15,10 +15,11 @@ This project demonstrates a **phishing attack simulation** combined with an **aw
 
 ## 📂 Project Structure
 ```
-📁 phishing-awareness/
+📁 CodeAlpha_PhishingAwarenessTraning/
 ├── index.html              # Snapchat-style fake login page
 ├── warning.html            # Warning page after login
 ├── phishing-awareness.html # Awareness page with quiz
+├── physhing-awar.html      # Awareness page with quiz
 ├── styles.css              # Common CSS for all pages
 ├── index.js                # Redirect logic for fake login
 ├── phishing.js             # Quiz logic with score tracking
@@ -26,7 +27,7 @@ This project demonstrates a **phishing attack simulation** combined with an **aw
 ```
 
 ## 🚀 Live Demo
-🔗 **View Here:** [https://your-username.github.io/your-repo-name/](https://your-username.github.io/your-repo-name/)
+🔗 **View Here:** [https://xadeeb.github.io/CodeAlpha_PhishingAwarenessTraning/](https://xadeeb.github.io/CodeAlpha_PhishingAwarenessTraning/)
 
 ## 🛠 Technologies Used
 - HTML5
@@ -35,13 +36,13 @@ This project demonstrates a **phishing attack simulation** combined with an **aw
 
 ## ⚡ How to Run Locally
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/xadeeb/CodeAlpha_PhishingAwarenessTraning.git
+cd CodeAlpha_PhishingAwarenessTraning
 # Open index.html in your browser
 ```
 
 ## 📸 Screenshots
-(Add screenshots after hosting)
+-----------------
 
 ## ⚠ Disclaimer
 This project is **for educational purposes only**. Do NOT use it for malicious phishing attacks.
